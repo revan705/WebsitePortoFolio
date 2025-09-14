@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Portofolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <div class="navbar">
+            <nav>
+                <h2>Revan <br>Junior FrontEnd</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="headerText">
+                <h2>
+                    Junior Front End <br>Developer
+                </h2>
+                <h1>Hi, I'm <span>Revan</span> From Jakarta</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+        <div class="navbar">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="datadiriterbaru (1).jpg" >
+                </div>
+                <div class="about-col2">
+                    <h1 class="about-me">About Me</h1>
+                    <p>My name is Revan, a 18-year-old graduate from SMK Negeri 36 Jakarta, 
+                        majoring in Computer and Network Engineering. I have strong technical skills in networking, 
+                        including routing and switching, as well as solid experience in troubleshooting internet connectivity, 
+                        printers, and computer hardware/software issues.
+                        I completed an internship as an IT Helpdesk at PT Hipernet Indodata,
+                         where I was responsible for managing and configuring laptops, 
+                         resolving issues related to internet, hardware, and software, 
+                         as well as setting up and troubleshooting printers. I also gained hands-on 
+                         experience in local network setup, including IP addressing, DHCP server/client/relay, 
+                         Inter-VLAN routing and switching, static and dynamic routing (OSPF), NAT, 
+                         and network troubleshooting.
+                        In addition, I have experience monitoring local networks and infrastructure, 
+                        including CCTV systems, routers (Cisco, Mikrotik), switches (Cisco, Ruijie), 
+                        and access points (Aruba).</p>
+                        <div class="tab-tittles">
+                            <p class="tab-links skills" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('achievements')">Achievements</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Junior NetworkEngineer</span><br>Setup NetworkTopologhy & Troubleshooting</li>
+                                <li><span>It Support</span><br>Setup, Monitoring & Troubleshooting Network and Device.</li>
+                                <li><span>Junior FrontEnd Developer</span><br>Setup & Design Front Website</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 (5 Months)</span><br>Internship IT Support at Hypernet Technologies</li>
+                                <li><span>2024 (3 Months)</span><br>Internship at Terminal Peti Kemas Koja</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>Coding Camp by RevoU</li>
+                                <li><span>2025</span><br>Course Learn CCNA 200-301 by AgunaCourse</li>
+                                <li><span>2025 (1 Months)</span><br>Bootcamp Mikrotik Engineer by IDNetworkers</li>
+                                <li><span>2022 - 2025</span><br>Computer and Network Engineering <br>Graduate SMK Negeri 36 Jakarta (Vocational High School)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>2025</span><br>2nd Place Winner in Information Technology Network <br>
+                                System Administration Vocational High School Competition, North Jakarta Region II </li>
+                                <li><span>2024</span><br>3rd Place Winner in Information Technology Network <br> 
+                                System Administration Vocational High School Competition, North Jakarta Region II</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- My Services -->
+    <div id="services">
+        <div class="navbar">
+                <h1 class="about-me">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h3>Setup NetworkTopologhy</h3>
+                        <p>Experienced in designing and configuring network topologies using 
+                            various industry-standard devices, including routers and switches 
+                            from Mikrotik, Cisco, and Ruijie. Skilled in setting up and 
+                            managing both wired and wireless network infrastructures.
+                            Additionally, proficient in deploying and maintaining 
+                            wireless networks using access points from Aruba and TP-Link, 
+                            ensuring optimal connectivity, performance, and network security across 
+                            diverse environments.
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links')
+        var tabContents = document.getElementsByClassName('tab-contents')
+
+        function openTab(tabname){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove('skills')
+            }
+            for(tabcontent of tabContents){
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('skills')
+            document.getElementById(tabname).classList.add('active-tab')
+        }   
+    </script>
+</body>
+</html>
