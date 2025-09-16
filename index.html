@@ -1,130 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website Portofolio</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div id="container">
-        <div class="navbar">
-            <nav>
-                <h2>Revan <br>Junior FrontEnd</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-            <div class="headerText">
-                <h2>
-                    Junior Front End <br>Developer
-                </h2>
-                <h1>Hi, I'm <span>Revan</span> From Jakarta</h1>
-            </div>
+      <div class="navbar">
+        <nav>
+          <h2>Revan <br />Junior FrontEnd</h2>
+          <ul id="sideMenu">
+            <li><a href="#container">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portFolio">Portfolio</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+            <img src="components/close menu.png" width="2%" class="fas" onclick="closeMenu()">
+          </ul>
+          <img src="components/menu.png" width="2%" class="fas" onclick="openMenu()">
+        </nav>
+        <div class="headerText">
+          <h2>Junior Front End <br />Developer</h2>
+          <h1>Hi, I'm <span>Revan</span> From Jakarta</h1>
         </div>
+      </div>
     </div>
     <!-- About Me -->
     <div id="about">
-        <div class="navbar">
-            <div class="row">
-                <div class="about-col1">
-                    <img src="datadiriterbaru (1).jpg" >
-                </div>
-                <div class="about-col2">
-                    <h1 class="about-me">About Me</h1>
-                    <p>My name is Revan, a 18-year-old graduate from SMK Negeri 36 Jakarta, 
-                        majoring in Computer and Network Engineering. I have strong technical skills in networking, 
-                        including routing and switching, as well as solid experience in troubleshooting internet connectivity, 
-                        printers, and computer hardware/software issues.
-                        I completed an internship as an IT Helpdesk at PT Hipernet Indodata,
-                         where I was responsible for managing and configuring laptops, 
-                         resolving issues related to internet, hardware, and software, 
-                         as well as setting up and troubleshooting printers. I also gained hands-on 
-                         experience in local network setup, including IP addressing, DHCP server/client/relay, 
-                         Inter-VLAN routing and switching, static and dynamic routing (OSPF), NAT, 
-                         and network troubleshooting.
-                        In addition, I have experience monitoring local networks and infrastructure, 
-                        including CCTV systems, routers (Cisco, Mikrotik), switches (Cisco, Ruijie), 
-                        and access points (Aruba).</p>
-                        <div class="tab-tittles">
-                            <p class="tab-links skills" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                            <p class="tab-links" onclick="openTab('achievements')">Achievements</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Junior NetworkEngineer</span><br>Setup NetworkTopologhy & Troubleshooting</li>
-                                <li><span>It Support</span><br>Setup, Monitoring & Troubleshooting Network and Device.</li>
-                                <li><span>Junior FrontEnd Developer</span><br>Setup & Design Front Website</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2024 (5 Months)</span><br>Internship IT Support at Hypernet Technologies</li>
-                                <li><span>2024 (3 Months)</span><br>Internship at Terminal Peti Kemas Koja</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2025</span><br>Coding Camp by RevoU</li>
-                                <li><span>2025</span><br>Course Learn CCNA 200-301 by AgunaCourse</li>
-                                <li><span>2025 (1 Months)</span><br>Bootcamp Mikrotik Engineer by IDNetworkers</li>
-                                <li><span>2022 - 2025</span><br>Computer and Network Engineering <br>Graduate SMK Negeri 36 Jakarta (Vocational High School)</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="achievements">
-                            <ul>
-                                <li><span>2025</span><br>2nd Place Winner in Information Technology Network <br>
-                                System Administration Vocational High School Competition, North Jakarta Region II </li>
-                                <li><span>2024</span><br>3rd Place Winner in Information Technology Network <br> 
-                                System Administration Vocational High School Competition, North Jakarta Region II</li>
-                                
-                            </ul>
-                        </div>
-                </div>
+      <div class="navbar">
+        <div class="row">
+          <div class="about-col1">
+            <img src="datadiriterbaru (1).jpg" />
+          </div>
+          <div class="about-col2">
+            <h1 class="about-me">About Me</h1>
+            <p>
+              My name is Revan, a 18-year-old graduate from SMK Negeri 36
+              Jakarta, majoring in Computer and Network Engineering. I have
+              strong technical skills in networking, including routing and
+              switching, as well as solid experience in troubleshooting internet
+              connectivity, printers, and computer hardware/software issues. I
+              completed an internship as an IT Helpdesk at PT Hipernet Indodata,
+              where I was responsible for managing and configuring laptops,
+              resolving issues related to internet, hardware, and software, as
+              well as setting up and troubleshooting printers. I also gained
+              hands-on experience in local network setup, including IP
+              addressing, DHCP server/client/relay, Inter-VLAN routing and
+              switching, static and dynamic routing (OSPF), NAT, and network
+              troubleshooting. In addition, I have experience monitoring local
+              networks and infrastructure, including CCTV systems, routers
+              (Cisco, Mikrotik), switches (Cisco, Ruijie), and access points
+              (Aruba).
+            </p>
+            <div class="tab-tittles">
+              <p class="tab-links skills" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('achievements')">
+                Achievements
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Junior NetworkEngineer</span><br />Setup
+                  NetworkTopologhy & Troubleshooting
+                </li>
+                <li>
+                  <span>It Support</span><br />Setup, Monitoring &
+                  Troubleshooting Network and Device.
+                </li>
+                <li>
+                  <span>Junior FrontEnd Developer</span><br />Setup & Design
+                  Front Website
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 (5 Months)</span><br />Internship IT Support at
+                  Hypernet Technologies
+                </li>
+                <li>
+                  <span>2024 (3 Months)</span><br />Internship at Terminal Peti
+                  Kemas Koja
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br />Coding Camp by RevoU</li>
+                <li>
+                  <span>2025</span><br />Course Learn CCNA 200-301 by
+                  AgunaCourse
+                </li>
+                <li>
+                  <span>2025 (1 Months)</span><br />Bootcamp Mikrotik Engineer
+                  by IDNetworkers
+                </li>
+                <li>
+                  <span>2022 - 2025</span><br />Computer and Network Engineering
+                  <br />Graduate SMK Negeri 36 Jakarta (Vocational High School)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="achievements">
+              <ul>
+                <li>
+                  <span>2025</span><br />2nd Place Winner in Information
+                  Technology Network <br />
+                  System Administration Vocational High School Competition,
+                  North Jakarta Region II
+                </li>
+                <li>
+                  <span>2024</span><br />3rd Place Winner in Information
+                  Technology Network <br />
+                  System Administration Vocational High School Competition,
+                  North Jakarta Region II
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-<!-- My Services -->
+    <!-- My Services -->
     <div id="services">
-        <div class="navbar">
-                <h1 class="about-me">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <h3>Setup NetworkTopologhy</h3>
-                        <p>Experienced in designing and configuring network topologies using 
-                            various industry-standard devices, including routers and switches 
-                            from Mikrotik, Cisco, and Ruijie. Skilled in setting up and 
-                            managing both wired and wireless network infrastructures.
-                            Additionally, proficient in deploying and maintaining 
-                            wireless networks using access points from Aruba and TP-Link, 
-                            ensuring optimal connectivity, performance, and network security across 
-                            diverse environments.
-                        </p>
-                    </div>
-                </div>
+      <div class="navbar">
+        <h1 class="about-me">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h3>Setup NetworkTopologhy</h3>
+            <p>
+              Experienced in designing and configuring network topologies using
+              various industry-standard devices, including routers and switches
+              from Mikrotik, Cisco, and Ruijie. Skilled in setting up and
+              managing both wired and wireless network infrastructures.
+              Additionally, proficient in deploying and maintaining wireless
+              networks using access points from Aruba and TP-Link, ensuring
+              optimal connectivity, performance, and network security across
+              diverse environments.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h3>Support IT</h3>
+            <p>
+              Experienced in providing comprehensive IT support services,
+              including the setup, monitoring, and troubleshooting of various IT
+              infrastructures. Responsibilities include configuring and
+              maintaining network devices (routers, switches, access points),
+              computers (hardware and software), printers, and CCTV systems.
+              Proficient in diagnosing and resolving technical issues to ensure
+              minimal downtime and optimal system performance. Skilled in
+              routine maintenance, user support, system updates, and network
+              monitoring to maintain a secure and stable IT environment. Capable
+              of working independently or as part of a team to support
+              end-users, manage IT assets, and contribute to continuous
+              improvement of IT operations.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h3>Front End Developer</h3>
+            <p>
+              Experienced Front-End Developer with a strong focus on building
+              responsive, user-friendly, and visually appealing web interfaces.
+              Proficient in translating UI/UX design wireframes into
+              high-quality code using modern front-end technologies such as
+              HTML5, CSS3, JavaScript, and frameworks like React, Vue.js, or
+              Angular.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- PortFolio -->
+    <div id="portFolio">
+      <div class="navbar">
+        <h1 class="about-me">My Work</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="./components/SetupWebsite.png" height="100%" />
+            <div class="judulProject">
+              <h2>Build Website</h2>
+              <p>
+                I have developed a website that provides randomly generated
+                strong password recommendations, which you can download directly
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./components/ItSupport-2.jpg" height="100%" />
+            <div class="judulProject">
+              <h2>Setup Computer</h2>
+              <p>
+                I set up laptops by installing all the necessary applications
+                and performing thorough cross-checks to ensure the devices are
+                secure and fully ready for client use.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./components/Setuptopologi.png" height="100%" />
+            <div class="judulProject">
+              <h2>Setup Topology</h2>
+              <p>
+                I build networks based on predefined topologies to ensure
+                seamless communication between all network devices and end
+                users, while implementing strong security measures to guarantee
+                safe and reliable connectivity.
+              </p>
+            </div>
+          </div>
+          </div>
+          <a href="https://www.linkedin.com/in/revan-alfarizi-7797142b2/" class="bttn">
+            See more
+          </a>
+        </div>
+      </div>
     </div>
 
-    <script>
-        var tabLinks = document.getElementsByClassName('tab-links')
-        var tabContents = document.getElementsByClassName('tab-contents')
+    <!-- Contact section -->
 
-        function openTab(tabname){
-            for(tabLink of tabLinks){
-                tabLink.classList.remove('skills')
-            }
-            for(tabcontent of tabContents){
-                tabcontent.classList.remove('active-tab')
-            }
-            event.currentTarget.classList.add('skills')
-            document.getElementById(tabname).classList.add('active-tab')
-        }   
+    <div id="contactMe">
+      <div class="navbar">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="about-me">Contact Me</h1>
+            <p><img src="components/mail_7286139.png" width="7%">alfarizirevan705@gmail.com</p>
+            <p><img src="components/circle_16617786.png" width="7%">083899903275</p>
+            <div class="social-menus">
+              <a href="https://www.instagram.com/mhmdrvn_farizi/"><img src="components/icon-ig.png"></a>
+              <a href="#"><img src="components/facebook_779082.png"></a>
+              <a href="https://www.linkedin.com/in/revan-alfarizi-7797142b2/"><img src="components/linkedin.png"></a>
+              <a href="https://github.com/revan705"><img src="components/github_536452.png"></a>
+            </div>
+            <a href="components/CV TERBARU M REVAN AL FARIZI.pdf" download class="bttn bttn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required/>
+              <input type="email" name="Email" placeholder="Your Email" required/>
+              <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="bttn bttn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight">
+        <p>Copyright © Revan, Website ini dibuat berdasarkan kemauan hati ♥ pencipta.</p>
+      </div>
+    </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("skills");
+        }
+        for (tabcontent of tabContents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("skills");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
-</body>
+    <script>
+
+      var sideMenu = document.getElementById('sideMenu')
+      function openMenu(){
+        sideMenu.style.right = '0'
+      }
+      function closeMenu(){
+        sideMenu.style.right = '-200px'
+      }
+
+
+    </script>
+  </body>
 </html>
